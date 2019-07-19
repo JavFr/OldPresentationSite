@@ -17,7 +17,7 @@ $(document).ready(function(){
         toogleCube("cube-5", "#6a4c93");
     });
     $("#cube-6").click(function(){      
-        toogleCube("cube-4", "#8ac926");
+        toogleCube("cube-6", "#8ac926");
     });
     /* Hide the cube info whe is click, or when escape key is pressed*/
     $("#complete-cube").click(function(){hideCompleteCube()});
@@ -56,7 +56,7 @@ $(document).ready(function(){
     });
     $("#cube-6").on('keydown', function(event) {
         if (event.key == "Enter") {
-            toogleCube("cube-4", "#8ac926");
+            toogleCube("cube-6", "#8ac926");
         }
     });
     /*                  */
@@ -76,6 +76,17 @@ function hideCompleteCube (){
 
 function toogleCube(cube, background){
     $('main').css({'grid-gap': '0'});
-    $("#complete-cube").css({"background": background, 'z-index': "999"});
+    $("#complete-cube").css({"background": background,'z-index': "999"}); 
     $("#info-"+cube).addClass('show-info').removeClass('hide-info');
+    rechargeMeters();
+}
+function rechargeMeters(){
+    $(".meter > span").each(function() {
+        $(this)
+          .data("origWidth", $(this).width())
+          .width(0)
+          .animate({
+            width: $(this).data("origWidth") // or + "%" if fluid
+          }, 1200);
+      });
 }

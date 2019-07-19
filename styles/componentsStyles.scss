@@ -1,0 +1,36 @@
+.meter{
+    margin-left: 20px;
+    height: 25px;
+    min-width: 100px; 
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43,194,83);
+  position: relative;
+  overflow: hidden;
+  }
+
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  .meter > span {
+    animation: move 2s linear infinite;
+  }
