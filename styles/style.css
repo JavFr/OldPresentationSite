@@ -35,6 +35,41 @@
   animation: move 2s linear infinite;
 }
 
+/*Languages Flags*/
+#setEs, #setEn {
+  background: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+
+#setEs:hover, #setEn:hover,
+#setEs:focus, #setEn:focus {
+  transform: scale(1.1);
+}
+
+/*Font Buttons */
+#standarFont {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#dyslexicFont {
+  font-family: "OpenDyslexic" !important;
+}
+
+#standarFont, #dyslexicFont {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 100%;
+}
+
+#standarFont:hover, #dyslexicFont:hover,
+#standarFont:focus, #dyslexicFont:focus {
+  transform: scale(1.1);
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -168,13 +203,10 @@ section {
   color: white;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 #info-cube-2 {
@@ -225,6 +257,8 @@ section {
 
 #info-cube-6 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%2398de2a' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%2398de2a' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skills-list {
@@ -242,48 +276,23 @@ section {
 
 .config-list {
   list-style: none;
+  padding: 0;
+  min-height: 80%;
+  min-width: 100%;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.config-list li {
-  display: flex;
-  flex-flow: row wrap;
+.credits {
+  align-content: flex-end;
+  max-height: 20%;
 }
 
-.config-list li a {
-  text-decoration: none;
-}
-
-#dyslexicFont {
-  font-family: "OpenDyslexic" !important;
-}
-
-.lang-button {
-  background: transparent;
-  border: none;
-}
-
-.spanish-icon {
-  background: url("../icons/001-spain.svg");
-}
-
-.english-icon {
-  background: url("../icons/002-united-kingdom.svg");
-}
-
-.spanish-icon, .english-icon {
-  display: block;
-  text-indent: -9999px;
-  width: 100px;
-  height: 82px;
-  background-size: 100px 82px;
-}
-
-.spanish-icon:hover, .english-icon:hover,
-.spanish-icon:focus, .english-icon:focus {
-  transform: scale(0.95);
+/*FONT SIZES*/
+h2 {
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {

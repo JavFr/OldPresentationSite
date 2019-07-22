@@ -34,3 +34,35 @@
   .meter > span {
     animation: move 2s linear infinite;
   }
+
+
+/*Languages Flags*/
+#setEs, #setEn {
+  background: transparent;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+#setEs:hover, #setEn:hover, 
+#setEs:focus, #setEn:focus{
+  transform: scale(1.1);
+} 
+
+/*Font Buttons */
+#standarFont{
+  font-family: 'Montserrat', sans-serif !important;
+}
+#dyslexicFont{
+  font-family: "OpenDyslexic" !important;
+}
+#standarFont, #dyslexicFont{
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 100%;
+}
+#standarFont:hover, #dyslexicFont:hover,
+#standarFont:focus, #dyslexicFont:focus{
+  transform: scale(1.1);
+}

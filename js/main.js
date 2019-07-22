@@ -67,8 +67,16 @@ $(document).ready(function(){
     $('#setEn').click(function(){changeLang('en')});
     $('#setEs').click(function(){changeLang('es')});
     /*Font Buttons*/
-    $('#standarFont').click(function(){setFont("'Montserrat', sans-serif")});
-    $('#dyslexicFont').click(function(){setFont("OpenDyslexic")});
+    $('#standarFont').click(function(){
+        setFont("'Montserrat', sans-serif");
+        $("#dyslexicFont").show();
+        $('#standarFont').hide();
+    });
+    $('#dyslexicFont').click(function(){
+        setFont("OpenDyslexic");
+        $("#dyslexicFont").hide();
+        $('#standarFont').show();
+    });
 
 });
 
