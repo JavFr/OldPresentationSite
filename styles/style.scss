@@ -33,10 +33,16 @@ body{
     height: 100%;
     background-color: $back-color;
 }
+body :lang(es) .en {
+    display: none;
+  }
+body :lang(en) .es {
+    display: none;
+}
 #wrapper{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex !important;
     align-items: stretch;
     justify-content: center;
 }
@@ -56,14 +62,6 @@ body{
     height: calc(100% - 40px);
     transition: all .8s ease;
     z-index: -1;
-}
-button{
-    position: absolute;
-    bottom: -50px;
-    left: calc(50% - 50px);
-    width: 100px;
-    height: 50px;
-    border-radius: 0 0 50% 50%;
 }
 main{
     width: 100%;
@@ -209,8 +207,12 @@ section{
 .config-list li a {
     text-decoration: none;
 }
-#dyslexic{
-    font-family: "OpenDyslexic";
+#dyslexicFont{
+    font-family: "OpenDyslexic" !important;
+}
+.lang-button{
+    background: transparent;
+    border: none;
 }
 .spanish-icon{
     background: url('../icons/001-spain.svg');
@@ -224,6 +226,10 @@ section{
     width: 100px;
     height: 82px;
     background-size: 100px 82px;
+}
+.spanish-icon:hover, .english-icon:hover,
+.spanish-icon:focus, .english-icon:focus{
+    transform: scale(.95);
 }
 
 

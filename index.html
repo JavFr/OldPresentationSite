@@ -8,6 +8,10 @@
         
         <title>Javier Brustolon</title>
 
+        <script type="text/javascript">
+            var userLang = navigator.language || navigator.userLanguage; 
+        </script>
+
     </head>
     <body>
         <div id="wrapper">
@@ -19,22 +23,22 @@
             </div>-->
             <main>
                 <div class="nav-cube" id="cube-1" tabindex="2">
-                    <h2>Javier Franco</h2>  
+                    <h2>Javier Franco</h2> 
                 </div>
                 <div class="nav-cube" id="cube-2" tabindex="3">
-                    <h2>Skills</h2>
+                    <h2><span class="en">Skills</span><span class="es">Aptitudes</span></h2>
                 </div>
                 <div class="nav-cube" id="cube-3" tabindex="4">
-                    <h2>Contact</h2>
+                    <h2><span class="en">Contact</span><span class="es">Contacto</span></h2>
                 </div>
                 <div class="nav-cube" id="cube-4" tabindex="5">
-                    <h2>Projects</h2>                  
+                    <h2><span class="en">Projects</span><span class="es">Proyectos</span></h2>               
                 </div>
                 <div class="nav-cube" id="cube-5" tabindex="6">
                     <h2>Social</h2>
                 </div>
                 <div class="nav-cube" id="cube-6" tabindex="7">
-                    <h2>Configuración</h2>
+                    <h2><span class="es">Configuración</span><span class="en">Configuration</span></h2>
                 </div>
                 <div id="complete-cube">
                     <section class="hide-info" id="info-cube-1">
@@ -98,10 +102,13 @@
                     <section class="hide-info" id="info-cube-6">
                         <ul class="config-list">
                             <li>
-                                <a href="index.html#english" class="english-icon"></a>
-                                <a href="index.html#spanish" class="spanish-icon"></a>   
+                                <button id="setEn" class="lang-button" type="button"><span class="english-icon"></span></button>
+                                <button id="setEs" class="lang-button" type="button"><span class="spanish-icon"></span></button> 
                             </li>
-                            <li><a href="#standarFont">Fuente Estandar</a> <a id="dyslexic" href="#dyslexicFont">OpenDyslexic</a></li>
+                            <li>
+                                <button id="standarFont" type="button"><span class="es">Fuente Estándar</span><span class="en">Standar Font</span></button>
+                                <button id="dyslexicFont" type="button">OpenDyslexic</button>
+                            </li>
                         </ul>
                         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> messages.attribution.is_licensed_by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                         <p>Los fondos copados los obtuve de <a target="_blank" href="https://www.SVGBackgrounds.com">SVGBackgrounds.com</a></p>

@@ -1,3 +1,7 @@
+
+
+
+$('html').attr('lang', userLang);
 $(document).ready(function(){
 
     /*Open Cube info when it's click*/
@@ -59,7 +63,12 @@ $(document).ready(function(){
             toogleCube("cube-6", "#8ac926");
         }
     });
-    /*                  */
+    /*Language Buttons*/
+    $('#setEn').click(function(){changeLang('en')});
+    $('#setEs').click(function(){changeLang('es')});
+    /*Font Buttons*/
+    $('#standarFont').click(function(){setFont("'Montserrat', sans-serif")});
+    $('#dyslexicFont').click(function(){setFont("OpenDyslexic")});
 
 });
 
@@ -89,4 +98,10 @@ function rechargeMeters(){
             width: $(this).data("origWidth") // or + "%" if fluid
           }, 1200);
       });
+}
+function changeLang(language){
+    $("html").attr('lang', language);
+}
+function setFont(font){
+    $('*').css({'font-family': font});
 }
