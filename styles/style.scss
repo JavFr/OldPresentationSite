@@ -43,16 +43,15 @@ body :lang(en) .es {
 #wrapper{
     width: 100%;
     height: 100%;
-    display: flex !important;
+    display: flex;
     align-items: stretch;
     justify-content: center;
 }
-#navigation-menu{
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    background: $navigation-menu-color;
+#rotateMessage{
+    display: none;
+    padding: 10%;
 }
+
 #complete-cube{
     margin: 20px;
     visibility: visible;
@@ -134,7 +133,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10%;
+    padding: auto;
 }
 #info-cube-2{
     flex-flow: row wrap;
@@ -164,6 +163,8 @@ section{
 }*/
 #info-cube-1{
     background-image: $pattern-2;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #info-cube-2{
     background-image: $pattern-1;
@@ -197,7 +198,7 @@ section{
 .config-list{
     list-style: none; 
     padding: 0; 
-    min-height: 80%;
+    min-height: 60%;
     min-width: 100%;
     display: flex;
     flex-flow: column;
@@ -206,29 +207,32 @@ section{
 }
 
 .credits{
+    justify-content: center;
     align-content: flex-end;
-    max-height: 20%;
+    max-height: 40%;  
+    margin-bottom: 20px;
 }
+.credits a{
+    color: white;
+}
+
 /*FONT SIZES*/
 h2{
-    font-size: 1.2rem;
+    font-size: 50px;
 }
 h3{
-    font-size: 2rem;
+    font-size: 50px;
 }
-li{
-    font-size: .8rem;
+#credits{
+    font-size: 30px;
 }
 p{
-    font-size: 1.2rem;
+    font-size: 45px;
 }
 
 
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
     main{
         grid-template-rows: repeat(3, 1fr);
@@ -256,7 +260,12 @@ p{
     }
 
  }
-// Large devices (desktops, 992px and up)
+@media (min-width: 1024px){
+    #wrapper{display: flex !important;}
+    #rotateMessage{display: none !important;}
+}
+
+
 @media (min-width: 1200px) {
     main{
         grid-template-rows: repeat(2, 1fr);
@@ -275,6 +284,10 @@ p{
     }
     #cube-5 {grid-column: 3/5;}
     #cube-6{grid-column: 5/7;}
+
+    p{
+        font-size: 35px;
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)

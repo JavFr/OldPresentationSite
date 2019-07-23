@@ -3,6 +3,11 @@
 
 $('html').attr('lang', userLang);
 $(document).ready(function(){
+    if ($(window).width() > $(window).height()){
+        $("#wrapper").hide();
+        $("#rotateMessage").show();
+    }
+    $(window).on("orientationchange", function(){detectScreenRotated()});
 
     /*Open Cube info when it's click*/
     $("#cube-1").click(function(){      
@@ -113,3 +118,13 @@ function changeLang(language){
 function setFont(font){
     $('*').css({'font-family': font});
 }
+function detectScreenRotated(){
+   if ($(window).height() > $(window).width()){
+       $("#wrapper").hide();
+       $("#rotateMessage").show();
+   }
+   if ($(window).width() > $(window).height()){
+        $("#wrapper").show();
+        $("#rotateMessage").hide();
+    }
+};
