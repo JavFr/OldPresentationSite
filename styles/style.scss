@@ -15,6 +15,7 @@ $navigation-menu-color: rgba(255, 255, 255, 1);
 
 @import './componentsStyles.scss';
 @import 'https://cdn.clarkhacks.com/OpenDyslexic/v1/OpenDyslexic.css';
+@import "./socialIcons.scss";
 
 * {
     -webkit-box-sizing: border-box;
@@ -26,7 +27,7 @@ html{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-size: 20px;
+    font-size: 40px;
 }
 body{
     margin: auto;
@@ -133,7 +134,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10%;
 }
 #info-cube-2{
     flex-flow: row wrap;
@@ -175,12 +176,12 @@ section{
 }
 #info-cube-5{
     background-image: $pattern-5;
+
 }
 #info-cube-6{
     background-image: $pattern-6;
     justify-content: space-between;
     align-items: center;
-
 }
 .skills-list{
     list-style: none;
@@ -210,8 +211,16 @@ section{
 }
 /*FONT SIZES*/
 h2{
+    font-size: 1.2rem;
+}
+h3{
     font-size: 2rem;
-
+}
+li{
+    font-size: .8rem;
+}
+p{
+    font-size: 1.2rem;
 }
 
 
@@ -248,7 +257,7 @@ h2{
 
  }
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     main{
         grid-template-rows: repeat(2, 1fr);
     } 
