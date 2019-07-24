@@ -5,8 +5,8 @@
  * here: http://simpleicons.org/
  */
 .social-icons {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
   list-style: none;
   display: flex;
@@ -75,8 +75,8 @@
 
 .icon--linkedin a {
   background-color: #007fb1;
-  background-image: url("../icons/linkedin.svg"); }
+  background-image: url("../icons/linkedin.png"); }
 
 .icon--github a {
   background-color: #4078c0;
-  background-image: url("../icons/github.svg"); }
+  background-image: url("../icons/github.png"); }

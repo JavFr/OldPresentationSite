@@ -1,5 +1,7 @@
 .meter {
-  margin-left: 20px;
+  margin: auto;
+  margin-right: 0;
+  margin-left: 30px;
   height: 25px;
   min-width: 100px;
   position: relative;

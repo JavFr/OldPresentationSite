@@ -17,7 +17,7 @@ $(document).ready(function(){
         toogleCube("cube-2", "#ffca3a");
     });
     $("#cube-3").click(function(){      
-        toogleCube("cube-3", "#06d6a0");
+        toogleCube("cube-3", "#038663");
     });
     $("#cube-4").click(function(){      
         toogleCube("cube-4", "#1982c4");
@@ -28,8 +28,8 @@ $(document).ready(function(){
     $("#cube-6").click(function(){      
         toogleCube("cube-6", "#8ac926");
     });
-    /* Hide the cube info whe is click, or when escape key is pressed*/
-    $("#complete-cube").click(function(){hideCompleteCube()});
+    /* Hide the cube info when is clicked, or when escape key is pressed*/
+    $(".fa-times").click(function(){hideCompleteCube()});
 
     $(document).on('keydown', function(event) {
         if (event.key == "Escape") {
@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
     $("#cube-3").on('keydown', function(event) {
         if (event.key == "Enter") {
-            toogleCube("cube-3", "#06d6a0");
+            toogleCube("cube-3", "#038663");
         }
     });
     $("#cube-4").on('keydown', function(event) {
@@ -76,11 +76,15 @@ $(document).ready(function(){
         setFont("'Montserrat', sans-serif");
         $("#dyslexicFont").show();
         $('#standarFont').hide();
+        $("p").css({'font-size': '40px'});
     });
     $('#dyslexicFont').click(function(){
+        $("p").css({'font-size': '35px'});
+        $("h3").css({'font-size': '40px'});
         setFont("OpenDyslexic");
         $("#dyslexicFont").hide();
         $('#standarFont').show();
+        
     });
 
 });
