@@ -23,7 +23,7 @@
   "homepage": "https://github.com/JavFr/JavFr.github.io#readme",
   "devDependencies": {
     "lite-server": "^2.5.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "onchange": "^6.0.0",
     "parallelshell": "^3.0.1"
   }
